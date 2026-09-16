@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krishna Bandoju - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- GitHub Sidebar with Avatar (DP) -->
+  <aside class="github-sidebar">
+    <div class="sidebar-content">
+      <!-- GitHub Profile Avatar (DP) -->
+      <div class="github-profile-header">
+        <img id="githubAvatar" class="github-avatar" alt="GitHub Profile" src="">
+        <div id="profileStats" class="profile-login"></div>
+        <div id="repoMeta" class="profile-meta"></div>
+      </div>
+
+      <!-- Repos List -->
+      <div class="repos-section">
+        <h3 class="repos-title">Pinned & Recent</h3>
+        <div id="repoList" class="repo-list"></div>
+      </div>
+
+      <!-- Sidebar Links -->
+      <div class="sidebar-links">
+        <button id="sidebarLinkedIn" class="sidebar-btn linkedin-btn">LinkedIn</button>
+        <button id="sidebarGitHub" class="sidebar-btn github-btn">GitHub</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1>Krishna Bandoju</h1>
+        <p class="hero-subtitle">Senior .NET Developer | Full-Stack Engineer</p>
+        <div class="hero-buttons">
+          <button id="downloadResumeHero" class="btn btn-primary">Download Resume</button>
+          <button id="linkedinSecondary" class="btn btn-secondary">LinkedIn</button>
+          <button id="githubSecondary" class="btn btn-secondary">GitHub</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="section-content">
+        <h2>Skills & Expertise</h2>
+        <div id="skillsContainer" class="skills-grid" role="list"></div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <div class="section-content">
+        <h2>Experience</h2>
+        <div class="experience-list"></div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="section-content">
+        <h2>Projects & Case Studies</h2>
+        <div class="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="section-content">
+        <h2>Get In Touch</h2>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal for Project Details -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-panel" role="dialog" aria-labelledby="modalTitle">
+      <button id="modalClose" class="modal-close">×</button>
+      <div id="modalContent" class="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top">↑</button>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <button id="menuToggle" class="menu-toggle" aria-expanded="false">☰</button>
+    <ul id="nav-list" class="nav-list">
+      <li><a href="#hero" data-target="#hero">Home</a></li>
+      <li><a href="#skills" data-target="#skills">Skills</a></li>
+      <li><a href="#experience" data-target="#experience">Experience</a></li>
+      <li><a href="#projects" data-target="#projects">Projects</a></li>
+      <li><a href="#contact" data-target="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
